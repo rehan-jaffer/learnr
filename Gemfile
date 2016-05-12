@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
 gem 'bower-rails'
+gem 'therubyracer'
+gem 'less-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -40,10 +42,16 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'capybara-rails'
+  gem 'rubocop'
 end
 
 group :test do
   gem 'cucumber-rails'
+end
+
+group :production do
+  gem 'pg'
+  gem 'unicorn'
 end
 
 group :development do
