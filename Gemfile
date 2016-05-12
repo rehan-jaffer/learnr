@@ -18,6 +18,7 @@ gem 'twitter-bootstrap-rails'
 gem 'bower-rails'
 gem 'therubyracer'
 gem 'less-rails'
+gem 'sandi_meter'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

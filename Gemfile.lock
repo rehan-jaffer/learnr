@@ -121,6 +121,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kgio (2.9.3)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     less (2.6.0)
       commonjs (~> 0.2.7)
     less-rails (2.7.1)
@@ -138,6 +140,7 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mixlib-cli (1.5.0)
     multi_json (1.12.0)
     multi_test (0.1.2)
     nokogiri (1.6.7.2)
@@ -206,6 +209,10 @@ GEM
     ruby-progressbar (1.7.5)
     ruby_parser (3.7.3)
       sexp_processor (~> 4.1)
+    sandi_meter (1.2.0)
+      json
+      launchy
+      mixlib-cli
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -273,6 +280,7 @@ DEPENDENCIES
   rails (= 4.2.5.1)
   rspec-rails
   rubocop
+  sandi_meter
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
