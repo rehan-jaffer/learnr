@@ -1,0 +1,8 @@
+= link_to "New", new_admin_page_path, class: "btn btn-lg btn-primary" 
+%h1 Pages
+%table.table.table-bordered
+  %tr
+    %th Virtual Path
+    %th Title
+    %th Content
+  = render @pages
