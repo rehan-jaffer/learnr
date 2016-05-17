@@ -19,6 +19,7 @@ gem 'bower-rails'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'sandi_meter'
+gem 'simple_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
