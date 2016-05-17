@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def show
-    @html_content = ContentFinder.get(params[:id])
+    @content = Page.find(params[:id])
   end
 
 end
