@@ -1,4 +1,4 @@
-class Admin::PagesController < ApplicationController
+class Admin::PagesController < Admin::AdminController
 
   def new
     @page = Page.new
@@ -17,14 +17,24 @@ class Admin::PagesController < ApplicationController
   end
 
   def update
-    @page = Page.update_attributes(params[:id], page_params)
+    @page = Page.update(params[:id], page_params)
     unless @page.valid?
       render :edit
+      return
     end
+    redirect_to admin_pages_path
   end
 
   def show
     @page = Page.find(params[:id])
+  end
+
+  def index
+    @pages = Page.where(1).to_a
+  end
+
+  def page_params
+    params.require(:page).permit(:virtual_path, :content)
   end
 
 end
