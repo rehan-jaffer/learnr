@@ -20,6 +20,7 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'sandi_meter'
 gem 'simple_form'
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
